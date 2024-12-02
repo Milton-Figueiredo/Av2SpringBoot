@@ -1,0 +1,1336 @@
+2024-12-02T19:39:31.627-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] com.prova.av1.ProvaApplication           : Starting ProvaApplication using Java 17.0.10 with PID 35352 (C:\Users\milto\OneDrive\Documentos\SpringBoot\6 semestre\AV1\prova\target\classes started by milto in c:\Users\milto\OneDrive\Documentos\SpringBoot\6 semestre\AV1)
+2024-12-02T19:39:31.630-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] com.prova.av1.ProvaApplication           : The following 1 profile is active: "test"
+2024-12-02T19:39:31.685-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-02T19:39:31.686-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-02T19:39:32.434-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-02T19:39:32.502-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
+2024-12-02T19:39:33.804-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-02T19:39:33.843-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-02T19:39:33.843-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-02T19:39:34.004-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-02T19:39:34.005-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2318 ms
+2024-12-02T19:39:34.077-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-02T19:39:34.479-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdappdinhocarro user=SA
+2024-12-02T19:39:34.482-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-02T19:39:34.501-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdappdinhocarro'
+2024-12-02T19:39:34.893-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-02T19:39:35.096-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-02T19:39:35.212-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-02T19:39:35.287-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@6052288d
+2024-12-02T19:39:35.287-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@6052288d
+2024-12-02T19:39:35.287-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@6052288d
+2024-12-02T19:39:35.287-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@211ed4c5
+2024-12-02T19:39:35.287-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@211ed4c5
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@73eec118
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@73eec118
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@20a0876
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@20a0876
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@736d5efa
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@736d5efa
+2024-12-02T19:39:35.288-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@736d5efa
+2024-12-02T19:39:35.289-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@248214ae
+2024-12-02T19:39:35.289-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@248214ae
+2024-12-02T19:39:35.289-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@248214ae
+2024-12-02T19:39:35.289-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@6a7918de
+2024-12-02T19:39:35.289-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@6a7918de
+2024-12-02T19:39:35.289-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@5e6a465b
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@709cca7e
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@709cca7e
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@53d31202
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@714e4f4e
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@7d9a87a2
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@7d9a87a2
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@7d9a87a2
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@6bc36d55
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@6bc36d55
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@6bc36d55
+2024-12-02T19:39:35.291-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@204b212d
+2024-12-02T19:39:35.292-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@204b212d
+2024-12-02T19:39:35.292-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@204b212d
+2024-12-02T19:39:35.292-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@237c3e55
+2024-12-02T19:39:35.292-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@237c3e55
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@237c3e55
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@af21a0f
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@af21a0f
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@af21a0f
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@7a2b67c1
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@7a2b67c1
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@39073e0
+2024-12-02T19:39:35.293-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@39073e0
+2024-12-02T19:39:35.294-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@415c6b51
+2024-12-02T19:39:35.294-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@415c6b51
+2024-12-02T19:39:35.294-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@415c6b51
+2024-12-02T19:39:35.294-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@5b642317
+2024-12-02T19:39:35.294-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@7ad052d5
+2024-12-02T19:39:35.295-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@7ad052d5
+2024-12-02T19:39:35.295-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@7a5f311c
+2024-12-02T19:39:35.295-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@58fbdbe5
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@58fbdbe5
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@58fbdbe5
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@22fd2776
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@5ac38f06
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@59979293
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@5fb54eb7
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@5fb54eb7
+2024-12-02T19:39:35.296-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@143814a0
+2024-12-02T19:39:35.297-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@143814a0
+2024-12-02T19:39:35.297-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@5245129e
+2024-12-02T19:39:35.297-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@37a3014f
+2024-12-02T19:39:35.297-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@429631fa
+2024-12-02T19:39:35.297-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@16dfa01c
+2024-12-02T19:39:35.297-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@6cf491bb
+2024-12-02T19:39:35.298-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@43725c13
+2024-12-02T19:39:35.298-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@3018bc66
+2024-12-02T19:39:35.298-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@3018bc66
+2024-12-02T19:39:35.298-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@5b2c3539
+2024-12-02T19:39:35.298-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@5b2c3539
+2024-12-02T19:39:35.298-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@131d0eae
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@131d0eae
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@42de5a1a
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@42de5a1a
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@375025ab
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@375025ab
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@def5b85
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@767c4ce8
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@46c2d6b7
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@46c2d6b7
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@7009deb9
+2024-12-02T19:39:35.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@74d804e
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@13428743
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@43658cf2
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@43658cf2
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7d277e31
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@1683ce2b
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@117c3b27
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@117c3b27
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@7e9127e6
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@7e9127e6
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@380118f3
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@380118f3
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@380118f3
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@307b6b4e
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@307b6b4e
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@307b6b4e
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@402ecb65
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@37f76a91
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@7813a1c
+2024-12-02T19:39:35.300-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@7813a1c
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@6c4b00b9
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@6c4b00b9
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@6c4b00b9
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@5a888bb6
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@5627c194
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@58784096
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@58784096
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@6c82cde8
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@6c82cde8
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@6c82cde8
+2024-12-02T19:39:35.302-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@72493ef5
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@72493ef5
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@1a0a6a49
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@1a0a6a49
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@ecf56e
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@ecf56e
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@7afb9516
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@7afb9516
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@41fea22a
+2024-12-02T19:39:35.303-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@41fea22a
+2024-12-02T19:39:35.304-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@86fd07e
+2024-12-02T19:39:35.304-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@6f4f0398
+2024-12-02T19:39:35.309-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@7eb2c975
+2024-12-02T19:39:35.310-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@7eb2c975
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@7ce68d3e
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@2a2c7b5d
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@5cc5e826
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@5bc19f79
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@13066642
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@5ab901ec
+2024-12-02T19:39:35.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@294e5645
+2024-12-02T19:39:35.312-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@7e233e42
+2024-12-02T19:39:35.312-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@5e3773b2
+2024-12-02T19:39:35.466-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-02T19:39:35.530-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2024-12-02T19:39:35.530-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2024-12-02T19:39:35.530-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2024-12-02T19:39:35.531-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-12-02T19:39:35.532-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-12-02T19:39:35.533-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2024-12-02T19:39:35.537-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2024-12-02T19:39:35.538-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2024-12-02T19:39:35.538-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2024-12-02T19:39:35.540-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7a2664d8] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@6085cc7f]
+2024-12-02T19:39:35.676-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : BasicTypeRegistry registration overwritten (ARRAY + org.hibernate.type.descriptor.java.spi.BasicCollectionJavaType@19bae72d); previous =`org.hibernate.type.BasicCollectionType@2b85c15e`
+2024-12-02T19:39:35.676-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration List<integer> -> org.hibernate.type.BasicCollectionType@2b85c15e
+2024-12-02T19:39:35.677-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.List<java.lang.Integer> -> org.hibernate.type.BasicCollectionType@2b85c15e
+2024-12-02T19:39:36.298-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-02T19:39:36.299-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@7a2664d8] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@22a9013c]
+2024-12-02T19:39:36.311-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists carro cascade 
+2024-12-02T19:39:36.314-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists perfis cascade 
+2024-12-02T19:39:36.314-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pessoa cascade 
+2024-12-02T19:39:36.314-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2024-12-02T19:39:36.314-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists carro_seq
+2024-12-02T19:39:36.315-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists pessoa_seq
+2024-12-02T19:39:36.320-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create sequence carro_seq start with 1 increment by 50
+2024-12-02T19:39:36.322-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create sequence pessoa_seq start with 1 increment by 50
+2024-12-02T19:39:36.325-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table carro (
+        id integer not null,
+        valor_compra float(53) not null,
+        valor_venda float(53) not null,
+        idvenda uuid,
+        kilometragem_carro varchar(255),
+        marca varchar(255),
+        nome_carro varchar(255),
+        tipo_produto varchar(255),
+        primary key (id)
+    )
+2024-12-02T19:39:36.330-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table perfis (
+        tipo_pessoa integer,
+        pessoa_id bigint not null
+    )
+2024-12-02T19:39:36.332-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table pessoa (
+        data_cadastro date,
+        id bigint not null,
+        dtype varchar(31) not null,
+        cpf varchar(255) unique,
+        nome_pessoa varchar(255),
+        primary key (id)
+    )
+2024-12-02T19:39:36.335-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table venda (
+        data_venda date,
+        valor_total float(53) not null,
+        idcliente bigint,
+        id uuid not null,
+        produtos integer array,
+        primary key (id)
+    )
+2024-12-02T19:39:36.337-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists carro 
+       add constraint FK82sf84cjxkg95t66fvccvo5d1 
+       foreign key (idvenda) 
+       references venda
+2024-12-02T19:39:36.353-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists perfis 
+       add constraint FKlnesgnyiynjyqx8ks8cyhv6il 
+       foreign key (pessoa_id) 
+       references pessoa
+2024-12-02T19:39:36.355-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKa9i80xdfn1fqlc3utqkhu4ilk 
+       foreign key (idcliente) 
+       references pessoa
+2024-12-02T19:39:36.359-03:00 TRACE 35352 --- [appmconcecionaria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@22a9013c] for TypeConfiguration
+2024-12-02T19:39:36.360-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-02T19:39:37.121-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa c1_0 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.dtype='Cliente' 
+        and c1_0.id=?
+2024-12-02T19:39:37.144-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for pessoa_seq
+2024-12-02T19:39:37.168-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Cliente', ?)
+2024-12-02T19:39:37.175-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T19:39:37.182-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa c1_0 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.dtype='Cliente' 
+        and c1_0.id=?
+2024-12-02T19:39:37.183-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for pessoa_seq
+2024-12-02T19:39:37.184-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Cliente', ?)
+2024-12-02T19:39:37.185-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T19:39:37.188-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.cpf,
+        f1_0.data_cadastro,
+        f1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa f1_0 
+    left join
+        perfis tp1_0 
+            on f1_0.id=tp1_0.pessoa_id 
+    where
+        f1_0.dtype='Funcionario' 
+        and f1_0.id=?
+2024-12-02T19:39:37.190-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Funcionario', ?)
+2024-12-02T19:39:37.191-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T19:39:37.191-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T19:39:37.194-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.cpf,
+        f1_0.data_cadastro,
+        f1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa f1_0 
+    left join
+        perfis tp1_0 
+            on f1_0.id=tp1_0.pessoa_id 
+    where
+        f1_0.dtype='Funcionario' 
+        and f1_0.id=?
+2024-12-02T19:39:37.195-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Funcionario', ?)
+2024-12-02T19:39:37.196-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T19:39:37.197-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T19:39:37.202-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (idcliente, data_venda, produtos, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-12-02T19:39:37.209-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (idcliente, data_venda, produtos, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-12-02T19:39:37.210-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for carro_seq
+2024-12-02T19:39:37.211-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        carro
+        (kilometragem_carro, marca, nome_carro, tipo_produto, valor_compra, valor_venda, idvenda, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-02T19:39:37.213-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for carro_seq
+2024-12-02T19:39:37.214-03:00 DEBUG 35352 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        carro
+        (kilometragem_carro, marca, nome_carro, tipo_produto, valor_compra, valor_venda, idvenda, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-02T19:39:37.380-03:00  WARN 35352 --- [appmconcecionaria] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-02T19:39:37.443-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-02T19:39:38.416-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-02T19:39:38.451-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-02T19:39:38.461-03:00  INFO 35352 --- [appmconcecionaria] [restartedMain] com.prova.av1.ProvaApplication           : Started ProvaApplication in 7.231 seconds (process running for 7.627)
+2024-12-02T20:22:04.292-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] com.prova.av1.ProvaApplication           : Starting ProvaApplication using Java 17.0.10 with PID 18340 (C:\Users\milto\OneDrive\Documentos\SpringBoot\6 semestre\AV1\prova\target\classes started by milto in c:\Users\milto\OneDrive\Documentos\SpringBoot\6 semestre\AV1)
+2024-12-02T20:22:04.300-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] com.prova.av1.ProvaApplication           : The following 1 profile is active: "test"
+2024-12-02T20:22:04.447-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-02T20:22:04.447-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-02T20:22:06.306-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-02T20:22:06.489-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 131 ms. Found 5 JPA repository interfaces.
+2024-12-02T20:22:09.533-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-02T20:22:09.607-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-02T20:22:09.616-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-02T20:22:09.795-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-02T20:22:09.795-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5340 ms
+2024-12-02T20:22:09.885-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-02T20:22:10.702-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdappdinhocarro user=SA
+2024-12-02T20:22:10.710-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-02T20:22:10.743-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdappdinhocarro'
+2024-12-02T20:22:11.536-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-02T20:22:11.831-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-02T20:22:12.002-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@7afc3a56
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@7afc3a56
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@7afc3a56
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@29249027
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@29249027
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@1bb14e7c
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@1bb14e7c
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@247cde06
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@247cde06
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@3fc96e55
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@3fc96e55
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@3fc96e55
+2024-12-02T20:22:12.116-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@32616423
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@32616423
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@32616423
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@1533199f
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@1533199f
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@2c4a3766
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@1f3e83b4
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@1f3e83b4
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@1d014d80
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@10f3405e
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@6dffa421
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@6dffa421
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@6dffa421
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@6b7a909
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@6b7a909
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@6b7a909
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@114d8912
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@114d8912
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@114d8912
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@1bb6dad5
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@1bb6dad5
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@1bb6dad5
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@bf8bb2e
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@bf8bb2e
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@bf8bb2e
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@30bca4b9
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@30bca4b9
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@4d44aea5
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@4d44aea5
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@6009b5aa
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@6009b5aa
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@6009b5aa
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@2ee6534e
+2024-12-02T20:22:12.124-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@7b2ab347
+2024-12-02T20:22:12.132-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@7b2ab347
+2024-12-02T20:22:12.133-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@13731b01
+2024-12-02T20:22:12.134-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@3efa4820
+2024-12-02T20:22:12.134-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@3efa4820
+2024-12-02T20:22:12.135-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@3efa4820
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@221a0092
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@c043f1d
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@7a4968f
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@6b737513
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@6b737513
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@199fe67f
+2024-12-02T20:22:12.136-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@199fe67f
+2024-12-02T20:22:12.137-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@34cece86
+2024-12-02T20:22:12.137-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@177d267e
+2024-12-02T20:22:12.137-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@67d6126f
+2024-12-02T20:22:12.137-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@19cacf4
+2024-12-02T20:22:12.137-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@43e4f8bf
+2024-12-02T20:22:12.139-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@3d54686b
+2024-12-02T20:22:12.139-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@6ac650c4
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@6ac650c4
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@e59aa64
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@e59aa64
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@6a1c8a10
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@6a1c8a10
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@7415a008
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@7415a008
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@2c0d9e3e
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@2c0d9e3e
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@6fc41b51
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@610640b3
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@38cab97b
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@38cab97b
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@78763c32
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@37a7aefe
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@64f77361
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@91b1fe5
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@91b1fe5
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@40c53558
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4a1fa3e0
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@15acadb9
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@15acadb9
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@44197cde
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@44197cde
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@2d9feef0
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@2d9feef0
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@2d9feef0
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@1aa85800
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@1aa85800
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@1aa85800
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@6a19ef89
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@65698198
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@37d30bab
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@37d30bab
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@6f633d09
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@6f633d09
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@6f633d09
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@4a23e2cb
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@636fdf56
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@4c4e1ec3
+2024-12-02T20:22:12.140-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@4c4e1ec3
+2024-12-02T20:22:12.147-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@3a33e936
+2024-12-02T20:22:12.147-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@3a33e936
+2024-12-02T20:22:12.149-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@3a33e936
+2024-12-02T20:22:12.149-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@6fd37101
+2024-12-02T20:22:12.150-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@6fd37101
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@72db86c2
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@72db86c2
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@4e5f265c
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@4e5f265c
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@6b001cf8
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@6b001cf8
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@1faf23e0
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@1faf23e0
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@316c5b41
+2024-12-02T20:22:12.152-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@636f6f6
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@1203f4c8
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@1203f4c8
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@6eab766e
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@6c0f6d04
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@3759a3ec
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@2e5c0e22
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@1b711581
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@c013ca6
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@763db809
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@38de85f2
+2024-12-02T20:22:12.156-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@2b905275
+2024-12-02T20:22:12.439-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-02T20:22:12.528-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2024-12-02T20:22:12.536-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2024-12-02T20:22:12.536-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2024-12-02T20:22:12.536-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-12-02T20:22:12.536-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2024-12-02T20:22:12.536-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2024-12-02T20:22:12.545-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2024-12-02T20:22:12.545-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2024-12-02T20:22:12.545-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2024-12-02T20:22:12.545-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2f53e534] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7a9af484]
+2024-12-02T20:22:12.848-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : BasicTypeRegistry registration overwritten (ARRAY + org.hibernate.type.descriptor.java.spi.BasicCollectionJavaType@17e16515); previous =`org.hibernate.type.BasicCollectionType@28417167`
+2024-12-02T20:22:12.848-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration List<integer> -> org.hibernate.type.BasicCollectionType@28417167
+2024-12-02T20:22:12.848-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.List<java.lang.Integer> -> org.hibernate.type.BasicCollectionType@28417167
+2024-12-02T20:22:13.974-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-02T20:22:13.974-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2f53e534] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@78727e2]
+2024-12-02T20:22:14.006-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists carro cascade 
+2024-12-02T20:22:14.014-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists perfis cascade 
+2024-12-02T20:22:14.014-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists pessoa cascade 
+2024-12-02T20:22:14.014-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists venda cascade 
+2024-12-02T20:22:14.014-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists carro_seq
+2024-12-02T20:22:14.014-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists pessoa_seq
+2024-12-02T20:22:14.031-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create sequence carro_seq start with 1 increment by 50
+2024-12-02T20:22:14.031-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create sequence pessoa_seq start with 1 increment by 50
+2024-12-02T20:22:14.039-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table carro (
+        id integer not null,
+        valor_compra float(53) not null,
+        valor_venda float(53) not null,
+        idvenda uuid,
+        kilometragem_carro varchar(255),
+        marca varchar(255),
+        nome_carro varchar(255),
+        tipo_produto varchar(255),
+        primary key (id)
+    )
+2024-12-02T20:22:14.047-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table perfis (
+        tipo_pessoa integer,
+        pessoa_id bigint not null
+    )
+2024-12-02T20:22:14.055-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table pessoa (
+        data_cadastro date,
+        id bigint not null,
+        dtype varchar(31) not null,
+        cpf varchar(255) unique,
+        nome_pessoa varchar(255),
+        primary key (id)
+    )
+2024-12-02T20:22:14.064-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    create table venda (
+        data_venda date,
+        valor_total float(53) not null,
+        idcliente bigint,
+        id uuid not null,
+        produtos integer array,
+        primary key (id)
+    )
+2024-12-02T20:22:14.068-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists carro 
+       add constraint FK82sf84cjxkg95t66fvccvo5d1 
+       foreign key (idvenda) 
+       references venda
+2024-12-02T20:22:14.080-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists perfis 
+       add constraint FKlnesgnyiynjyqx8ks8cyhv6il 
+       foreign key (pessoa_id) 
+       references pessoa
+2024-12-02T20:22:14.080-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists venda 
+       add constraint FKa9i80xdfn1fqlc3utqkhu4ilk 
+       foreign key (idcliente) 
+       references pessoa
+2024-12-02T20:22:14.089-03:00 TRACE 18340 --- [appmconcecionaria] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@78727e2] for TypeConfiguration
+2024-12-02T20:22:14.089-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-02T20:22:15.632-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa c1_0 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.dtype='Cliente' 
+        and c1_0.id=?
+2024-12-02T20:22:15.656-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for pessoa_seq
+2024-12-02T20:22:15.714-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Cliente', ?)
+2024-12-02T20:22:15.722-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T20:22:15.730-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa c1_0 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.dtype='Cliente' 
+        and c1_0.id=?
+2024-12-02T20:22:15.738-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for pessoa_seq
+2024-12-02T20:22:15.744-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Cliente', ?)
+2024-12-02T20:22:15.748-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T20:22:15.752-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.cpf,
+        f1_0.data_cadastro,
+        f1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa f1_0 
+    left join
+        perfis tp1_0 
+            on f1_0.id=tp1_0.pessoa_id 
+    where
+        f1_0.dtype='Funcionario' 
+        and f1_0.id=?
+2024-12-02T20:22:15.759-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Funcionario', ?)
+2024-12-02T20:22:15.761-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T20:22:15.762-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T20:22:15.764-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.cpf,
+        f1_0.data_cadastro,
+        f1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa f1_0 
+    left join
+        perfis tp1_0 
+            on f1_0.id=tp1_0.pessoa_id 
+    where
+        f1_0.dtype='Funcionario' 
+        and f1_0.id=?
+2024-12-02T20:22:15.766-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        pessoa
+        (cpf, data_cadastro, nome_pessoa, dtype, id) 
+    values
+        (?, ?, ?, 'Funcionario', ?)
+2024-12-02T20:22:15.768-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T20:22:15.768-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        perfis
+        (pessoa_id, tipo_pessoa) 
+    values
+        (?, ?)
+2024-12-02T20:22:15.771-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (idcliente, data_venda, produtos, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-12-02T20:22:15.779-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        venda
+        (idcliente, data_venda, produtos, valor_total, id) 
+    values
+        (?, ?, ?, ?, ?)
+2024-12-02T20:22:15.786-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for carro_seq
+2024-12-02T20:22:15.786-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        carro
+        (kilometragem_carro, marca, nome_carro, tipo_produto, valor_compra, valor_venda, idvenda, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-02T20:22:15.796-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for carro_seq
+2024-12-02T20:22:15.796-03:00 DEBUG 18340 --- [appmconcecionaria] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        carro
+        (kilometragem_carro, marca, nome_carro, tipo_produto, valor_compra, valor_venda, idvenda, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-02T20:22:15.988-03:00  WARN 18340 --- [appmconcecionaria] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-02T20:22:16.045-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2024-12-02T20:22:17.601-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-02T20:22:17.639-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-02T20:22:17.655-03:00  INFO 18340 --- [appmconcecionaria] [restartedMain] com.prova.av1.ProvaApplication           : Started ProvaApplication in 14.258 seconds (process running for 15.105)
+2024-12-02T20:23:24.022-03:00  INFO 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-02T20:23:24.022-03:00  INFO 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-02T20:23:24.022-03:00  INFO 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-12-02T20:23:24.371-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:23:24.476-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:23:30.371-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:23:30.378-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:24:20.732-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:24:20.741-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:24:20.763-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:24:20.765-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:24:20.807-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.kilometragem_carro,
+        c1_0.marca,
+        c1_0.nome_carro,
+        c1_0.tipo_produto,
+        c1_0.valor_compra,
+        c1_0.valor_venda,
+        c1_0.idvenda 
+    from
+        carro c1_0
+2024-12-02T20:24:20.814-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa,
+        v1_0.data_venda,
+        v1_0.produtos,
+        v1_0.valor_total 
+    from
+        venda v1_0 
+    left join
+        (select
+            * 
+        from
+            pessoa t 
+        where
+            t.dtype='Cliente') c1_0 
+            on c1_0.id=v1_0.idcliente 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        v1_0.id=?
+2024-12-02T20:24:20.822-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        v1_0.id,
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa,
+        v1_0.data_venda,
+        v1_0.produtos,
+        v1_0.valor_total 
+    from
+        venda v1_0 
+    left join
+        (select
+            * 
+        from
+            pessoa t 
+        where
+            t.dtype='Cliente') c1_0 
+            on c1_0.id=v1_0.idcliente 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        v1_0.id=?
+2024-12-02T20:24:28.331-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:24:28.331-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:24:28.347-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:24:28.347-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:24:28.355-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.kilometragem_carro,
+        c1_0.marca,
+        c1_0.nome_carro,
+        c1_0.tipo_produto,
+        c1_0.valor_compra,
+        c1_0.valor_venda,
+        v1_0.id,
+        c2_0.id,
+        c2_0.cpf,
+        c2_0.data_cadastro,
+        c2_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa,
+        v1_0.data_venda,
+        v1_0.produtos,
+        v1_0.valor_total 
+    from
+        carro c1_0 
+    left join
+        venda v1_0 
+            on v1_0.id=c1_0.idvenda 
+    left join
+        (select
+            * 
+        from
+            pessoa t 
+        where
+            t.dtype='Cliente') c2_0 
+            on c2_0.id=v1_0.idcliente 
+    left join
+        perfis tp1_0 
+            on c2_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.id=?
+2024-12-02T20:25:35.382-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:25:35.389-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:25:35.395-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:25:35.399-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:25:35.403-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa 
+    from
+        pessoa c1_0 
+    where
+        c1_0.dtype='Cliente'
+2024-12-02T20:25:35.407-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:25:35.407-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:26:17.095-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:26:17.097-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:26:17.108-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:26:17.110-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:26:17.116-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa c1_0 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.dtype='Cliente' 
+        and c1_0.id=?
+2024-12-02T20:31:03.870-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:31:03.878-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:31:17.997-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:31:17.997-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:31:18.004-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:31:18.008-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:31:18.008-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.cpf,
+        c1_0.data_cadastro,
+        c1_0.nome_pessoa,
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        pessoa c1_0 
+    left join
+        perfis tp1_0 
+            on c1_0.id=tp1_0.pessoa_id 
+    where
+        c1_0.dtype='Cliente' 
+        and c1_0.id=?
+2024-12-02T20:31:22.190-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:31:22.190-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:31:22.197-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:31:22.205-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:36:12.492-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:36:12.492-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:36:21.677-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:36:21.677-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:36:21.685-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.dtype,
+        p1_0.cpf,
+        p1_0.data_cadastro,
+        p1_0.nome_pessoa 
+    from
+        pessoa p1_0 
+    where
+        p1_0.nome_pessoa=?
+2024-12-02T20:36:21.685-03:00 DEBUG 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        tp1_0.pessoa_id,
+        tp1_0.tipo_pessoa 
+    from
+        perfis tp1_0 
+    where
+        tp1_0.pessoa_id=?
+2024-12-02T20:36:21.726-03:00  WARN 18340 --- [appmconcecionaria] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.util.UUID'; Invalid UUID string: 1]
